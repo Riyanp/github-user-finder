@@ -13,5 +13,5 @@ class GithubBaseResponse {
     var incompleteResults: Boolean? = null
 
     @SerializedName("items")
-    var items: List<UserResponse>? = null
+    var items: MutableList<UserResponse>? = null
 }
