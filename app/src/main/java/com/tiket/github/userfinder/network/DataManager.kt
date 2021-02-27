@@ -27,7 +27,7 @@ class DataManager private constructor(private val context: Context) {
                         }
                         else -> {
                             callback.onError(
-                                    context.getString(R.string.error_message)
+                                    context.getString(R.string.error_message, response.code())
                             )
                         }
                     }
@@ -35,7 +35,7 @@ class DataManager private constructor(private val context: Context) {
             }
 
             override fun onFailure(call: Call<GithubBaseResponse>, t: Throwable) {
-                callback.onError(context.getString(R.string.error_message))
+                callback.onError(t.message)
             }
         })
     }

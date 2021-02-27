@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Github User Finder</string>
-    <string name="rate_limit_reached">Oops, this endpoint has reached it\'s rate limit, please try again in 1 minute</string>
-    <string name="error_message">Terjadi kesalahan pada server</string>
+    <string name="rate_limit_reached">Oops, endpoint ini sudah mencapai batas penggunaan, harap coba lagi dalam 1 menit.</string>
+    <string name="error_message">Terjadi kesalahan pada server. CODE : %1$d</string>
     <string name="field_must_not_empty">Harap inputkan minimal 1 karakter</string>
+    <string name="username_not_found">Oops, username tersebut belum terdaftar di github</string>
 </resources>
